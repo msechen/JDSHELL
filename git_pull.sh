@@ -38,7 +38,7 @@ function Git_PullShell {
 
 ## 克隆scripts
 function Git_CloneScripts {
-  git clone -b master ${ScriptsURL} ${ScriptsDir}
+  git clone -b ch ${ScriptsURL} ${ScriptsDir}
   ExitStatusScripts=$?
   echo
 }
@@ -48,7 +48,7 @@ function Git_PullScripts {
   cd ${ScriptsDir}
   git fetch --all
   ExitStatusScripts=$?
-  git reset --hard origin/master
+  git reset --hard origin/ch
   echo
 }
 
