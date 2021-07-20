@@ -109,6 +109,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 26 0 * * * bash jd jd_jdqd
 #财富岛 
 46 * * * * bash jd jd_cfd
+59 23 * * * bash jd jd_cfdtx
 #送豆得豆
 7 0,9 * * * bash jd jd_sendBeans
 #东东电竞经理
