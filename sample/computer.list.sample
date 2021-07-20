@@ -106,7 +106,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 #京喜牧场
 37 0-23  * * *  bash jd jd_jxmc
 #店铺签到
-26 0 * * * bash jd jd_jdqd
+26 0 * * * bash jd jd_dpqd
 #财富岛 
 46 * * * * bash jd jd_cfd
 59 11,12,23 * * * sleep 59 && bash jd jd_cfdtx
