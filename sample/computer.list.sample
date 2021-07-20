@@ -142,4 +142,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 1 6 * * * bash jd jd_goodMorning
 #京小鸽吾悦寄 活动日期：至2021年7月31日
 0 8,11,14 * * * bash jd jd_jxg
+#特物Z简爱
+8 8 * * * bash jd jd_twlove
 #============================临时及不定时任务============================================
