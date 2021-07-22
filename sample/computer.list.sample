@@ -87,6 +87,11 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 0 0 * * * bash jd jd_jxqd
 # 签到领现金
 2 0,10 * * * bash jd jd_cash
+#抢兑领现金红包
+0 0 * * 1 bash jd jd_cash_exchange
+0 0 * * 7 bash jd jd_cash_exchange
+1 0 * * 1 bash jd jd_cash_exchange
+1 0 * * 7 bash jd jd_cash_exchange
 # 京东小魔方
 10 7,19 * * * bash jd jd_xmf
 # 闪购盲盒 长期活动，一人每天5次助力机会，10次被助机会
@@ -136,6 +141,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 1 0-23 * * *  bash jd jd_super_redrain
 #金榜创造营 活动日期：2021年5月21日至2021年12月31日
 4 0,8 * * *  bash jd jd_jbczy
+20 6,11 * * *  bash jd jd_gold_creator
 #京享值PK
 3 3,5 * * * bash jd jd_ddo_pk
 #早起福利
@@ -144,4 +150,8 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 0 8,11,14 * * * bash jd jd_jxg
 #特物Z简爱
 8 8 * * * bash jd jd_twlove
+#女装盲盒 活动日期：至2021年7月31日
+2 8,11,14 * * * bash jd jd_nzmh
+#全民摸冰
+6 9,12 * * * bash jd jd_mb
 #============================临时及不定时任务============================================
