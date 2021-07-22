@@ -198,7 +198,7 @@ function Run_Pm2 {
 ## 运行挂机脚本
 function Run_HangUp {
   Import_Conf $1 && Detect_Cron && Set_Env
-  HangUpJs="jd_cfd_loop"
+  HangUpJs="jd_crazy_joy_coin"
   cd ${ScriptsDir}
   if type pm2 >/dev/null 2>&1; then
     Run_Pm2 2>/dev/null
