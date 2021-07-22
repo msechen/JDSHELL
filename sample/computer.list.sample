@@ -33,6 +33,8 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 5 8 * * * bash jd jd_bean_change
 # 领京豆额外奖励(每日可获得3京豆)
 15 0,12,22 * * * bash jd jd_bean_home_old
+#升级赚京豆 入口：首页-领京豆-升级赚京豆
+1 9,16 * * * bash jd jd_mmdou
 # 京豆签到
 4 0,9,12,18 * * * bash jd jd_bean_sign
 # 京东汽车
