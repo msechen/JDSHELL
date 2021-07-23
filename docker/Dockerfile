@@ -1,8 +1,8 @@
 FROM node:lts-alpine
-ARG JD_BASE_URL=https://github.com/msechen/JDSHELL
+ARG JD_BASE_URL=https://github.com/msewebchen/jd-base
 ARG JD_BASE_BRANCH=main
-ARG JD_SCRIPTS_URL=https://github.com/msechen/script
-ARG JD_SCRIPTS_BRANCH=main
+ARG JD_SCRIPTS_URL=https://github.com/msewebchen/Mirror
+ARG JD_SCRIPTS_BRANCH=ch
 ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin \
     LANG=zh_CN.UTF-8 \
     SHELL=/bin/bash \
