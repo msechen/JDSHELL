@@ -476,6 +476,34 @@ export JOY_RUN_NOTIFY=""
 ## 金币有时效，默认为 "false"，不卖出金果为金币，如想希望自动卖出，请修改为 "true"
 export MONEY_TREE_SELL_FRUIT=""
 
+################################## 定义京喜工厂电力团活动ID（选填） ##################################
+##京喜工厂拼团瓜分电力活动团ID（activeId）已失效\n请自行抓包替换(Node环境变量为TUAN_ACTIVEID，iOS端在BoxJx)
+export TUAN_ACTIVEID="T_zZaWP6by9yA1wehxM4mg=="
+
+##############签到领现金######################
+#cashHelpPins环境变量中填入需要助力的pt_pin，有多个请用@符号连接
+export cashHelpPins="mseweb@jd_5a0e621a9977c"
+
+##############全民开红包######################
+#kois环境变量中填入需要助力的pt_pin，有多个请用@符号连接
+export kois="mseweb@jd_5a0e621a9977c"
+
+##############发财大赢家######################
+#dyjHelpPins环境变量中填入需要助力的pt_pin，有多个请用@符号连接
+export dyjHelpPins="mseweb@jd_5a0e621a9977c"
+
+##############赚30元######################
+#earn30Pins环境变量中填入需要助力的pt_pin，有多个请用@符号连接
+export earn30Pins="mseweb@jd_5a0e621a9977c"
+
+##############全民抢京豆######################
+#angryBeanPins环境变量中填入需要助力的pt_pin，有多个请用@符号连接
+export angryBeanPins="mseweb@jd_5a0e621a9977c"
+
+
+##############全民抢红包邀请码######################
+export shareCode="4572925D4F65C8DF5B7FE5359CCBC2CF"
+
 
 ################################## 定义东东萌宠是否静默运行（选填） ##################################
 ## 默认 "false"（不静默，发送推送通知消息），如想静默请修改为 true
