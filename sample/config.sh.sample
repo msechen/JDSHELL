@@ -1,5 +1,5 @@
-## Version: v3.7.23
-## Date: 2021-7-23
+## Version: v3.5.30
+## Date: 2021-5-30
 ## Update Content:Lxk大佬去除惊喜农场JXNCTOKENS变量，故去除京喜农场TOKEN
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
@@ -18,33 +18,6 @@
 ## 其他date命令的更多用法，可以在命令行中输入 date --help  查看
 ## 判断条件 -eq -ne -gt -ge -lt -le ，具体含义可百度一下
 
-################################## 定义京喜工厂电力团活动ID（选填） ##################################
-##京喜工厂拼团瓜分电力活动团ID（activeId）已失效\n请自行抓包替换(Node环境变量为TUAN_ACTIVEID，iOS端在BoxJx)
-export TUAN_ACTIVEID="T_zZaWP6by9yA1wehxM4mg=="
-
-##############签到领现金######################
-#cashHelpPins环境变量中填入需要助力的pt_pin，有多个请用@符号连接
-export cashHelpPins="mseweb@jd_5a0e621a9977c"
-
-##############全民开红包######################
-#kois环境变量中填入需要助力的pt_pin，有多个请用@符号连接
-export kois="mseweb@jd_5a0e621a9977c"
-
-##############发财大赢家######################
-#dyjHelpPins环境变量中填入需要助力的pt_pin，有多个请用@符号连接
-export dyjHelpPins="mseweb@jd_5a0e621a9977c"
-
-##############赚30元######################
-#earn30Pins环境变量中填入需要助力的pt_pin，有多个请用@符号连接
-export earn30Pins="mseweb@jd_5a0e621a9977c"
-
-##############全民抢京豆######################
-#angryBeanPins环境变量中填入需要助力的pt_pin，有多个请用@符号连接
-export angryBeanPins="mseweb@jd_5a0e621a9977c"
-
-
-##############全民抢红包邀请码######################
-export shareCode="4572925D4F65C8DF5B7FE5359CCBC2CF"
 
 ################################## 定义Cookie（必填） ##################################
 ## 请依次填入每个用户的Cookie，Cookie的具体形式（只有pt_key字段和pt_pin字段，没有其他字段）：pt_key=xxxxxxxxxx;pt_pin=xxxx;
