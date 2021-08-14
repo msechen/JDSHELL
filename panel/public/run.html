@@ -42,9 +42,9 @@
                 <button id="jd_cash_exchange" class="cmd-btn" title="领现金兑红包">领现金兑红包</button>
                 <button id="jd_priceProtect" class="cmd-btn" title="京东保价">京东保价</button>
                 <button id="jd_blueCoin" class="cmd-btn" title="超市兑换">超市兑换</button>
-                <button id="git_pull" title="更新脚本">更新脚本</button>
                 <button id="jd_get_share_code" title="导出所有互助码">导出所有互助码</button>
                 <button id="jd_get_share_code_format" title="自动更新容器所有互助码">自动更新容器所有互助码</button>
+                <button id="git_pull" title="更新脚本">更新脚本</button>
                 <button id="hangup" title="重启挂机程序">重启挂机程序</button>
                 <button id="resetpwd" title="重置用户名密码">重置用户名密码</button>
                 <br/>
@@ -107,17 +107,21 @@
                 }, 1000);
             });
 
-            $('#hangup, #resetpwd, #export_sharecodes, #git_pull').click(function() {
+            $('#hangup, #resetpwd, #jd_get_share_code, #jd_get_share_code_format, #git_pull').click(function() {
                 let confirmTxt, cmd;
                 switch (this.id) {
                     case 'git_pull':
                         confirmTxt = '确认更新脚本文件？';
                         cmd = 'bash git_pull 2>&1 | tee -a ${JD_DIR}/log/git_pull.log';
                         break;
-                    case 'export_sharecodes':
+                    case 'jd_get_share_code':
                         confirmTxt = '确认导出所有互助码？';
                         cmd = `bash ${this.id}`;
                         break;
+                    case 'jd_get_share_code_format':
+                        confirmTxt = '确认导出所有互助码？';
+                        cmd = `bash ${this.id}`;
+                        break;                        
                     case 'hangup':
                         confirmTxt = '确认重启挂机程序？';
                         cmd = `bash jd ${this.id}`;
