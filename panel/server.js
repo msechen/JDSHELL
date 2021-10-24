@@ -79,7 +79,7 @@ async function step1() {
     try {
         s_token, cookies, guid, lsid, lstoken, okl_token, token = ""
         let timeStamp = (new Date()).getTime()
-        let url = 'https://plogin.m.jd.com/cgi-bin/mm/new_login_entrance?lang=chs&appid=1234&returnurl=https://wq.jd.com/passport/LoginRedirect?state=' + timeStamp + '&returnurl=https://home.m.jd.com/myJd/newhome.action?sceneval=2&ufc=&/myJd/home.action&source=wq_passport'
+        let url = 'https://plogin.m.jd.com/cgi-bin/mm/new_login_entrance?lang=chs&appid=300&returnurl=https://wq.jd.com/passport/LoginRedirect?state=' + timeStamp + '&returnurl=https://home.m.jd.com/myJd/newhome.action?sceneval=2&ufc=&/myJd/home.action&source=wq_passport'
         const response = await got(url, {
             responseType: 'json',
             headers: {
@@ -87,7 +87,7 @@ async function step1() {
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'Accept': 'application/json, text/plain, */*',
                 'Accept-Language': 'zh-cn',
-                'Referer': 'https://plogin.m.jd.com/login/login?appid=1234&returnurl=https://wq.jd.com/passport/LoginRedirect?state=' + timeStamp + '&returnurl=https://home.m.jd.com/myJd/newhome.action?sceneval=2&ufc=&/myJd/home.action&source=wq_passport',
+                'Referer': 'https://plogin.m.jd.com/login/login?appid=300&returnurl=https://wq.jd.com/passport/LoginRedirect?state=' + timeStamp + '&returnurl=https://home.m.jd.com/myJd/newhome.action?sceneval=2&ufc=&/myJd/home.action&source=wq_passport',
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36',
                 'Host': 'plogin.m.jd.com'
             }
@@ -120,7 +120,7 @@ async function step2() {
                 'Content-Type': 'application/x-www-form-urlencoded; Charset=UTF-8',
                 'Accept': 'application/json, text/plain, */*',
                 'Cookie': cookies,
-                'Referer': 'https://plogin.m.jd.com/login/login?appid=1234&returnurl=https://wqlogin2.jd.com/passport/LoginRedirect?state=' + timeStamp + '&returnurl=//home.m.jd.com/myJd/newhome.action?sceneval=2&ufc=&/myJd/home.action&source=wq_passport',
+                'Referer': 'https://plogin.m.jd.com/login/login?appid=300&returnurl=https://wqlogin2.jd.com/passport/LoginRedirect?state=' + timeStamp + '&returnurl=//home.m.jd.com/myJd/newhome.action?sceneval=2&ufc=&/myJd/home.action&source=wq_passport',
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36',
                 'Host': 'plogin.m.jd.com',
             }
@@ -128,7 +128,7 @@ async function step2() {
         token = response.body.token
         okl_token = response.headers['set-cookie'][0]
         okl_token = okl_token.substring(okl_token.indexOf("=") + 1, okl_token.indexOf(";"))
-        var qrUrl = 'https://plogin.m.jd.com/cgi-bin/m/tmauth?appid=1234&client_type=m&token=' + token;
+        var qrUrl = 'https://plogin.m.jd.com/cgi-bin/m/tmauth?appid=300&client_type=m&token=' + token;
         return qrUrl;
     } catch (error) {
         console.log(error.response.body);
@@ -154,7 +154,7 @@ async function checkLogin() {
                 source: 'wq_passport'
             },
             headers: {
-                'Referer': 'https://plogin.m.jd.com/login/login?appid=1234&returnurl=https://wqlogin2.jd.com/passport/LoginRedirect?state=' + timeStamp + '&returnurl=//home.m.jd.com/myJd/newhome.action?sceneval=2&ufc=&/myJd/home.action&source=wq_passport',
+                'Referer': 'https://plogin.m.jd.com/login/login?appid=300&returnurl=https://wqlogin2.jd.com/passport/LoginRedirect?state=' + timeStamp + '&returnurl=//home.m.jd.com/myJd/newhome.action?sceneval=2&ufc=&/myJd/home.action&source=wq_passport',
                 'Cookie': cookies,
                 'Connection': 'Keep-Alive',
                 'Content-Type': 'application/x-www-form-urlencoded; Charset=UTF-8',
